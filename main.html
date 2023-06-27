@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2916/2916315.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styleMap.css">
+	<title>Inimigos do CPD</title>
+</head>
+<body>
+	<header>
+		<img src="img/logo.png">
+	</header>
+	<main>
+			<section id="quadrado">
+			<div class="pesquisa">
+					<div class="iconesEscrita">
+						<a href="https://maps.app.goo.gl/ULcdNM9qdzQVhEm98"><img class="icone" src="img/IconImpressora.png"></a>
+						<p>Localização de todas impressoras</p>
+					</div>
+					<div class="iconesEscrita">
+						<a href="https://earth.google.com/earth/d/1FEQSZ3WL_oeFV5cWl9aFX8Lcz71V3oc1?usp=sharing"><img class="icone" src="img/IconMapa.png"></a>
+						<p>Localização de todas unidades</p>
+					</div>
+				</section>
+				<section>
+					<div class="pesquisa">
+						<div class="form__group field">
+							<input type="input" class="form__field" placeholder="Nome da unidade" id="leituraUnidade" name="name" id='name' required />
+							<label for="name" class="form__label"></label>
+						</div>
+					</div>
+						<div class="botaoEnfeite">
+							<nav>
+								 <ul>
+								   <li>
+								      Pesquisar
+								      <span></span><span></span><span></span><span></span>
+								   </li>
+							</nav>
+						</div>
+						</div>
+					</div>
+					<div class="botaoPesquisaLoc">
+						<button class="botao" id="botaoHome"></button>
+					</div>
+					<h1 id="tituloMapa"></h1>
+				<div id="mapa" >
+					<iframe id="urlMapa" src="" width="600" height="450" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</section>
+	</main>
+	<footer>
+		<p id="textoFooter">Beta 1.0 (Higor B.)</p>
+	</footer>
+</body>
+	<script type="text/javascript" src="js/map.js"></script>
+</html>

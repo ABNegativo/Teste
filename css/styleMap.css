@@ -1,0 +1,258 @@
+header{
+	display: flex;
+    justify-content: center;
+    padding: 16px 0 16px 0;
+    width: 100%;
+	background: #1D4597;
+}
+
+main {
+	font-family: 'Poppins', sans-serif;
+	background: rgb(201,198,212);
+	background: linear-gradient(0deg, rgba(201,198,212,1) 0%, rgba(218,224,242,0.6250875350140056) 50%);
+}
+
+p {
+	font-family: inherit;
+	font-size: bold;
+}
+
+#quadrado {
+	padding: 40px 0 32px 0;
+  }
+
+.iconesEscrita{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px 8px 16px 8px;
+	position: relative;
+    background: #E0D68A;
+    border: 2px;
+    border-color: blue;
+	border-radius: 12px;
+	margin: 8px 20% 8px 18%;
+}
+
+.icone{
+	position: relative;
+/*	left: 8vw;*/
+	max-width:40px;
+    max-height:35px;
+    padding-right: 32px;
+    width: auto;
+    height: auto;
+}
+
+.pesquisa{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+}
+
+/*-------------Botão----------------------*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    --c: goldenrod;
+    color: black;
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 8em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+    transform: translateY(0) scale(2);
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+/*nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}*/
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+
+/*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+    text-align: center;
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #D9A729;
+  outline: 0;
+  font-size: 1.3rem;
+  font-size: bold;
+  color: #1D4597;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: black;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: blue;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #D9A729,#D9A729);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+/*-----------------------------------------------------------*/
+
+.botaoEnfeite {
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.botao {
+    display: inline-flex;
+    text-align: center;
+    background: none;
+    border: none;
+    width: 132px;
+    height: 58px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+/*.botao:hover {
+    border-width: 3px;
+    border-radius: 16;
+    border-color: #D9A729;
+    background: rgb(224,214,138);
+    background: linear-gradient(0deg, rgba(224,214,138,0.5147392290249433) 0%, rgba(217,167,41,0.43764172335600904) 50%);
+
+}*/
+
+.botaoPesquisaLoc{
+    bottom: 72px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.espacoPesquisa {
+	margin-bottom: 8px;
+}
+
+#tituloMapa{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+
+#mapa {
+	margin-top: 30px;
+	border-radius: 4;
+	position: relative;
+	justify-content: center;
+	width: 100%;
+	display: none;
+}
+
+#textoFooter {
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 5vw;
+    justify-content: center;
+    text-align: center;
+	background: #1D4597;
+	width: 100vw;
+	height: 20vw;
+}
